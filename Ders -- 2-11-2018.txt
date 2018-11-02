@@ -1,0 +1,118 @@
+#include <iostream>
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+	/* Switch - Case Yapýsý ile Not Hesaplama */
+	//int puan;
+	
+	//printf("Puan degerini giriniz: ");
+	
+	//scanf("%d", &puan);
+	
+	// Eðer Puan 0'dan Küçük ve 100'den Büyük Deðilse Switch-Case Yapýsýný Çalýþtýr
+	/*
+	if(!(puan<0)  && !(puan > 100)) {
+		switch(puan/10){
+			case  10:
+				printf("Durum= A++");
+			break;
+			
+			case  9:
+				printf("Durum= A+");
+			break;
+			
+			case  8:
+				printf("Durum= A");
+			break;
+			
+			case  7:
+				printf("Durum= B");
+			break;		
+			
+			case  6:
+				printf("Durum= C");
+			break;	
+			
+			case  5:
+				printf("Durum= D");
+			break;	
+					
+			default:
+				printf("Durum= F");
+			break;				
+		}		
+	}
+	else {
+		printf("Girdiðiniz deðeri tekrar kontrol ediniz.");
+		
+	}	
+	
+	
+	*/
+	
+	/* Switch- Case Yapýsý ile Alan Hesaplama 
+	
+	char type;
+	float a;
+	float b;
+	
+	printf("Hesaplamak istedediginiz deðeri (triangle, dikdortgen, daire) a, b deðerlerini girin");
+
+	scanf("%c %f %f", &type, &a, &b);
+	
+	switch(type){
+		case 'u':
+			printf("Alan = a*b/2=%f", a*b/2);
+			break; 
+		case 'd':
+			printf("Alan = a*b=%f", a*b);
+			break; 
+		case 'c':
+			printf("Alan = pi*a^2=%f", 3.14*pow(a,2));
+			break; 
+									
+	}
+	
+	*/
+	
+	/* Switch - Case ile Birlikte Hesap Makinesi Yapýmý */
+	
+	char islem;
+	int a;
+	int b;
+	
+	
+	printf("Hesap = a ? b = ");
+	
+	scanf("%d %c %d", &a, &islem, &b);
+	
+	
+		switch(islem){
+		case '+':
+			printf("a+b=%d", a+b);
+		break; 
+		
+		case '-':
+			printf("a-b=%d", a-b);
+		break; 
+		
+		case '*':
+			printf("a*b=%d", a*b);
+		break; 
+		
+		case '/':
+			printf("a / b=%d", a/b);
+		break; 
+		
+		case '%':
+			printf("a % b= %d", a%b);
+		break; 	
+		
+		case 'p':
+			printf("a^b=%d", (int)pow(a,b));
+		break; 					
+									
+	}
+	
+}
